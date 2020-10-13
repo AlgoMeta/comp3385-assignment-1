@@ -1,0 +1,130 @@
+[
+    {
+       "course_id":"1",
+       "course_name":"Introduction to Data Structures",
+       "course_description":"Computers can store and process vast amounts of data. Formal data structures enable a programmer to mentally structure large amounts of data into conceptually manageable relationships.",
+       "course_recommendation_count":"25",
+       "course_access_count":"100",
+       "course_image":"datastructures.jpg"
+    },
+    {
+       "course_id":"2",
+       "course_name":"Compiler Theory",
+       "course_description":"Compiler construction is an area of computer science that deals with the theory and practice of developing programming languages and their associated compilers.",
+       "course_recommendation_count":"43",
+       "course_access_count":"543",
+       "course_image":"compiler.png"
+    },
+    {
+       "course_id":"3",
+       "course_name":"Software Engineering",
+       "course_description":"Software engineering is the study and an application of engineering to the design, development, and maintenance of software.",
+       "course_recommendation_count":"57",
+       "course_access_count":"435",
+       "course_image":"software.jpg"
+    },
+    {
+       "course_id":"4",
+       "course_name":"Molecular Biochemistry",
+       "course_description":"The study of the molecular mechanisms by which genetic information encoded in DNA is able to result in the processes of life. ",
+       "course_recommendation_count":"322",
+       "course_access_count":"356",
+       "course_image":"molecular.jpg"
+    },
+    {
+       "course_id":"5",
+       "course_name":"Introduction to Renewable Energy",
+       "course_description":"Introduction to Renewable Energy (RE100) is an online course for those who wish to learn the basics of renewable energy – including where it is found, how we can harvest it for use in our homes, and how it can help ease pressures on the environment.",
+       "course_recommendation_count":"876",
+       "course_access_count":"6334",
+       "course_image":"renewable.jpg"
+    },
+    {
+       "course_id":"6",
+       "course_name":"Marine Biology",
+       "course_description":"The scientific study of organisms in the ocean or other marine or brackish bodies of water. Given that in biology many phyla, families and genera have some species that live in the sea and others that live on land, marine biology classifies species based on the environment rather than on taxonomy.",
+       "course_recommendation_count":"42",
+       "course_access_count":"974",
+       "course_image":"marine.jpg"
+    },
+    {
+       "course_id":"7",
+       "course_name":"Introduction to Astronomy",
+       "course_description":"Introduction to Astronomy provides a quantitative introduction to the physics of the solar system, stars, the interstellar medium, the galaxy, and the universe, as determined from a variety of astronomical observations and models.",
+       "course_recommendation_count":"342",
+       "course_access_count":"6367",
+       "course_image":"astronomy.jpg"
+    },
+    {
+       "course_id":"8",
+       "course_name":"Robotics",
+       "course_description":"Robotics is the branch of mechanical engineering, electrical engineering and computer science that deals with the design, construction, operation, and application of robots, as well as computer systems for their control, sensory feedback, and information processing.",
+       "course_recommendation_count":"12",
+       "course_access_count":"342",
+       "course_image":"robotics.jpg"
+    },
+    {
+       "course_id":"9",
+       "course_name":"Artificial Intelligence",
+       "course_description":"Artificial intelligence (AI) is the intelligence exhibited by machines or software. It is an academic field of study which studies the goal of creating intelligence. Major AI researchers and textbooks define this field as \"the study and design of intelligent agents.\"",
+       "course_recommendation_count":"32767",
+       "course_access_count":"312",
+       "course_image":"ai.jpg"
+    },
+    {
+       "course_id":"10",
+       "course_name":"Networks & Security",
+       "course_description":"Network security consists of the provisions and policies adopted by a network administrator to prevent and monitor unauthorized access, misuse, modification, or denial of a computer network and network-accessible resources.",
+       "course_recommendation_count":"73455",
+       "course_access_count":"244",
+       "course_image":"networksecurity.jpg"
+    },
+    {
+       "course_id":"11",
+       "course_name":"Biochemistry of Human Disease",
+       "course_description":"Specifically designed for upper-division undergraduate or graduate students in life science or pre-medical majors including dentistry or pharmacology, who are required to take a biochemistry or medical biochemistry course.",
+       "course_recommendation_count":"6980",
+       "course_access_count":"634",
+       "course_image":"humandisease.jpg"
+    },
+    {
+       "course_id":"12",
+       "course_name":"Introduction to Genetics",
+       "course_description":"",
+       "course_recommendation_count":"45678",
+       "course_access_count":"324",
+       "course_image":"genetics.jpg"
+    },
+    {
+       "course_id":"13",
+       "course_name":"Basic Mathematics",
+       "course_description":"Introduces basic algebraic, geometric, and two dimensional graphing techniques and applications. The course is designed primarily for students in specific vocational or technical programs.",
+       "course_recommendation_count":"3452",
+       "course_access_count":"776",
+       "course_image":"mathematics.jpg"
+    },
+    {
+       "course_id":"14",
+       "course_name":"Introduction to Electronics",
+       "course_description":"Getting started with basic electronics is easier than you might think. This course will demystify the basics of electronics so that anyone with an interest in building circuits can hit the ground running. ",
+       "course_recommendation_count":"54334",
+       "course_access_count":"5443",
+       "course_image":"electronics.jpg"
+    },
+    {
+       "course_id":"15",
+       "course_name":"Object-Oriented Programming",
+       "course_description":"Object-oriented programming (OOP) is a programming paradigm based on the concept of \"objects\", which are data structures that contain data, in the form of fields, often known as attributes; and code, in the form of procedures, often known as methods",
+       "course_recommendation_count":"45443",
+       "course_access_count":"4657",
+       "course_image":"oop.jpg"
+    },
+    {
+       "course_id":"16",
+       "course_name":"Computational Physics",
+       "course_description":"Computational physics is the study and implementation of numerical analysis to solve problems in physics for which a quantitative theory already exists.",
+       "course_recommendation_count":"67664",
+       "course_access_count":"423",
+       "course_image":"physics.jpg"
+    }
+ ]

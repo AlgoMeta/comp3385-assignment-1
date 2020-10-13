@@ -1,0 +1,26 @@
+[
+    {
+       "faculty_dept_id":"1",
+       "faculty_dept_name":"Department of Computer Science"
+    },
+    {
+       "faculty_dept_id":"2",
+       "faculty_dept_name":"Biology Department"
+    },
+    {
+       "faculty_dept_id":"3",
+       "faculty_dept_name":"Department of Electronics"
+    },
+    {
+       "faculty_dept_id":"4",
+       "faculty_dept_name":"Department of Mathematics"
+    },
+    {
+       "faculty_dept_id":"5",
+       "faculty_dept_name":"Department of Physics"
+    },
+    {
+       "faculty_dept_id":"6",
+       "faculty_dept_name":"Department of Chemistry"
+    }
+ ]
