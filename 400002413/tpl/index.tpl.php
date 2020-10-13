@@ -30,96 +30,53 @@
 		<header></header>
 		<main>
 			<h1>Most Popular</h1>
-			<div class="centered">
-				<section>
-					<a href="#"><img src="images/datastructures.jpg" alt="First Course" title="Data structures">
-					<span class="course-title">Introduction to Data Structures</span>
-					<span>Course Instructor</span></a>
-				</section>
-				<section>
-					<a href="#"><img src="images/compiler.png" alt="Second course" title="Compiler Theory">
-					<span class="course-title">Compiler Theory</span>
-					<span>Course Instructor</span></a>
-				</section>
-				<section>
-					<a href="#"><img src="images/software.jpg" alt="Third Course" title="Software Engineering">
-					<span class="course-title">Software Engineering</span>
-					<span>Course Instructor</span></a>
-				</section>
-				<section>
-					<a href="#"><img src="images/molecular.jpg" alt="Fourth Course" title="Molecular Biochemistry">
-					<span class="course-title">Molecular Biochemistry</span>
-					<span>Course Instructor</span></a>
-				</section>
-			</div>
-			<div class="centered">
-				<section>
-					<a href="#"><img src="images/renewable.jpg" alt="Fifth Course" title="Renewable Energy">
-					<span class="course-title">Renewable Energy</span>
-					<span>Course Instructor</span></a>
-				</section>
-				<section>
-					<a href="#"><img src="images/marine.jpg" alt="Sixth Course" title="Marine Biology">
-					<span class="course-title">Marine Biology</span>
-					<span>Course Instructor</span></a>
-				</section>
-				<section>
-					<a href="#"><img src="images/astronomy.jpg" alt="Seventh Course" title="Introduction to Astronomy">
-					<span class="course-title">Introduction to Astronomy</span>
-					<span>Course Instructor</span></a>
-				</section>
-				<section>
-					<a href="#"><img src="images/robotics.jpg" alt="Eighth Course" title="Robotics">
-					<span class="course-title">Robotics</span>
-					<span>Course Instructor</span></a>
-				</section>
-			</div>
+
+			<?php
+				$counter = 0;
+				foreach($this->obsData[0] as $record){
+					if ($counter == 0) {
+						echo "<div class='centered'>";
+					}
+
+					echo '<section>
+							<a href="#"><img src="images/' . $record["course_image"] . '" alt="First Course" title="Data structures">
+							<span class="course-title">' . $record["course_name"] . '</span>
+							<span>' . $record["instructor_name"] .'</span></a>
+						</section>';
+					
+					$counter++;
+			
+					if ($counter == 4) {
+						echo "</div>";
+						$counter = 0;
+					}
+				}
+			?>
 			
 			<h1>Learner Recommended</h1>
-			<div class="centered">
-				<section>
-				<a href="#"><img src="images/ai.jpg" alt="Learner first Course" title="Artificial Intelligence">
-				<span class="course-title">Artificial Intelligence</span>
-				<span>Course Instructor</span></a>
-				</section>
-				<section>
-				<a href="#"><img src="images/networksecurity.jpg" alt="Learner Second Course" title="Network and Security">
-				<span class="course-title">Networks &amp; Security</span>
-				<span>Course Instructor</span></a>
-				</section>
-				<section>
-				<a href="#"><img src="images/humandisease.jpg" alt="Learner Third Course" title="Biochemistry of Human Disease">
-				<span class="course-title">Biochemistry of Human Disease</span>
-				<span>Course Instructor</span></a>
-				</section>
-				<section>
-				<a href="#"><img src="images/genetics.jpg" alt="Learner Fourth Course" title="Introduction to Genetics">
-				<span class="course-title">Introduction to Genetics</span>
-				<span>Course Instructor</span></a>
-				</section>
-			</div>
-			<div class="centered">
-			<section>
-				<a href="#"><img src="images/mathematics.jpg" alt="Learner Fifth Course" title="Basic Mathematics">
-				<span class="course-title">Basic Mathematics</span>
-				<span>Course Instructor</span></a>
-			</section>
-			<section>
-				<a href="#"><img src="images/electronics.jpg" alt="Learner Sixth Course" title="Introduction to Electronics">
-				<span class="course-title">Introduction to Electronics</span>
-				<span>Course Instructor</span></a>
-			</section>
-			<section>
-				<a href="#"><img src="images/oop.jpg" alt="Learner Seventh Course" title="Object-Oriented Programming">
-				<span class="course-title">Object-Oriented Programming</span>
-				<span>Course Instructor</span></a>
-			</section>
-			<section>
-				<a href="#"><img src="images/physics.jpg" alt="Learner Eigth Course" title="Computational Physics">
-				<span class="course-title">Computational Physics</span>
-				<span>Course Instructor</span></a>
-			</section>
-			</div>
+
+			<?php
+				$counter = 0;
+				foreach($this->obsData[1] as $record){
+					if ($counter == 0) {
+						echo "<div class='centered'>";
+					}
+
+					echo '<section>
+							<a href="#"><img src="images/' . $record["course_image"] . '" alt="First Course" title="Data structures">
+							<span class="course-title">' . $record["course_name"] . '</span>
+							<span>' . $record["instructor_name"] .'</span></a>
+						</section>';
+					
+					$counter++;
+			
+					if ($counter == 4) {
+						echo "</div>";
+						$counter = 0;
+					}
+				}
+			?>
+			
 			<footer>
 				<nav>
 					<ul>
