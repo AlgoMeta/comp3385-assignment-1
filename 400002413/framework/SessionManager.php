@@ -28,11 +28,11 @@
         public static function accessible($user, $page):bool{
             if (session_status() == PHP_SESSION_ACTIVE){
                 if (isset($_SESSION["user"])){
-                    if ($_SESSION["user"] == $user && $page !== "login.php" && $page !== "signup.php") {
+                    if ($_SESSION["user"] == $user && $page !== "login" && $page !== "signup") {
                         return true;
                     }
                 } else {
-                    if($page !== "courses.php" && $page !== "profile.php"){
+                    if($page !== "courses" && $page !== "profile"){
                         return true;
                     }
                 }

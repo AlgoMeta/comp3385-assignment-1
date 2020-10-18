@@ -14,6 +14,7 @@
 				<li><a href="index.php?controller=AboutUs">About Us</a></li>
 				<?php
 					if (SessionManager::userIsLoggedIn()) {
+						echo '<li><a href="index.php?controller=Profile">Profile</a></li>';
 						echo '<li><a href="index.php?controller=Logout">Logout</a></li>';
 					} else {
 						echo '<li><a href="index.php?controller=Login">Login</a></li>';
