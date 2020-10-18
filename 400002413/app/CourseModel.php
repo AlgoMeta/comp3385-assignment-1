@@ -1,6 +1,6 @@
 <?php
 
-    class IndexModel extends Model{
+    class CourseModel extends Model{
         public function getAll():array{
             $data = file_get_contents($this->absolutePath . "/" . "data/courses.json");
             return json_decode($data,true);

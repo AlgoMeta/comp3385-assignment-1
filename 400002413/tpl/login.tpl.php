@@ -12,20 +12,40 @@
 				<li><a href="index.php?controller=Courses">Courses</a></li>
 				<li><a href="index.php?controller=Streams">Streams</a></li>
 				<li><a href="index.php?controller=AboutUs">About Us</a></li>
-				<li><a href="index.php?controller=Login">Login</a></li>
-				<li><a href="index.php?controller=SignUp">Sign Up</a></li>
+				<?php
+					if (SessionManager::userIsLoggedIn()) {
+						echo '<li><a href="index.php?controller=Logout">Logout</a></li>';
+					} else {
+						echo '<li><a href="index.php?controller=Login">Login</a></li>';
+						echo '<li><a href="index.php?controller=SignUp">Sign Up</a></li>';
+					}
+				?>
 			</ul>
 		</nav>
 		<main>
 		   <div class="login-box">
 			<div class="login-box-body">
 			<p class="login-box-msg">Be Curious - Sign In</p>
-			<form action="#" method="post">
+			<form action="index.php?controller=Login" method="POST">
+				<span style="color:red; text-align:center;">
+					<?php 
+						echo isset($loginError) ? $loginError : ""; 
+					?>
+				</span>
+				<span style="text-align:center;">
+					<?php 
+						if (isset($_SESSION["signupmsg"])) {
+							echo $_SESSION["signupmsg"];
+							SessionManager::remove("signupmsg");
+						}
+					?>
+				</span>
+				
 			  <div class="form-group has-feedback">
-				<input type="text" class="form-control" placeholder="Email"/>
+				<input type="text" class="form-control" placeholder="Email" name="email"/>
 			  </div>
 			  <div class="form-group has-feedback">
-				<input type="password" class="form-control" placeholder="Password"/>
+				<input type="password" class="form-control" placeholder="Password" name="password"/>
 			  </div>
 			  <div class="row">
 				<div class="col-xs-8">    
@@ -41,7 +61,7 @@
 			  </div>
 			</form>
 			<br>
-			<a href="register.html" class="text-center">Sign Up</a>
+			<a href="index.php?controller=SignUp" class="text-center">Sign Up</a>
        </div><!-- /.login-box-body -->
 	  </div>
 			<footer>

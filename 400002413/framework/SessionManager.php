@@ -39,5 +39,14 @@
             }
             return false;
         }
+
+        public static function userIsLoggedIn():bool{
+            if (session_status() == PHP_SESSION_ACTIVE){
+                if (isset($_SESSION["user"])) {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 ?>

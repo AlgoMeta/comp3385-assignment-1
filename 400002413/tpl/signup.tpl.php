@@ -12,32 +12,45 @@
 				<li><a href="index.php?controller=Courses">Courses</a></li>
 				<li><a href="index.php?controller=Streams">Streams</a></li>
 				<li><a href="index.php?controller=AboutUs">About Us</a></li>
-				<li><a href="index.php?controller=Login">Login</a></li>
-				<li><a href="index.php?controller=SignUp">Sign Up</a></li>
+				<?php
+					if (SessionManager::userIsLoggedIn()) {
+						echo '<li><a href="index.php?controller=Logout">Logout</a></li>';
+					} else {
+						echo '<li><a href="index.php?controller=Login">Login</a></li>';
+						echo '<li><a href="index.php?controller=SignUp">Sign Up</a></li>';
+					}
+				?>
 			</ul>
 		</nav>
 		<main>
 		   <div class="register-box">
 			<div class="register-box-body">
 			<p class="login-box-msg">Sign Up - Feed Your Curiosity</p>
-        <form action="processRegisteration.php" method="post">
+        <form action="index.php?controller=SignUp" method="post">
+			<?php
+				if (isset($errorArray)){
+					foreach($errorArray as $err){
+						echo "<span style='color:red; font-weight:bold;'>" . $err . "</span> <br>";
+					}
+				}
+			?>
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" name="formFullName" placeholder="Full name"/>
+            <input type="text" class="form-control" name="fullname" placeholder="Full name"/>
           </div>
           <div class="form-group has-feedback">
-            <input type="text" class="form-control" placeholder="Email"/>
+            <input type="text" class="form-control" name="email" placeholder="Email"/>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Password"/>
+            <input type="password" class="form-control" name="password" placeholder="Password"/>
           </div>
           <div class="form-group has-feedback">
-            <input type="password" class="form-control" placeholder="Retype password"/>
+            <input type="password" class="form-control" name="repassword" placeholder="Retype password"/>
           </div>
           <div class="row">
             <div class="col-xs-8">    
               <div class="checkbox icheck">
                 <label>
-                  <input type="checkbox"> I agree to the <a href="#">terms</a>
+                  <input type="checkbox" name="agree"> I agree to the <a href="#">terms</a>
                 </label>
               </div>                        
             </div><!-- /.col -->
