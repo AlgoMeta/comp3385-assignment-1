@@ -10,10 +10,10 @@
         }
         
         public function testSetModel(){
-            $indexModel = new IndexModel();
+            $courseModel = new CourseModel();
             $indexController = new IndexController();
-            $indexController->setModel($indexModel);
-            $this->assertEquals($indexModel, $indexController->getModel());
+            $indexController->setModel($courseModel);
+            $this->assertEquals($courseModel, $indexController->getModel());
         }
 
         public function testSetView(){
@@ -24,10 +24,10 @@
         }
 
         public function testGetModel(){
-            $indexModel = new IndexModel();
+            $courseModel = new CourseModel();
             $indexController = new IndexController();
-            $indexController->setModel($indexModel);
-            $this->assertEquals($indexModel, $indexController->getModel());
+            $indexController->setModel($courseModel);
+            $this->assertEquals($courseModel, $indexController->getModel());
         }
 
         public function testGetView(){

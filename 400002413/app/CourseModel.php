@@ -6,6 +6,18 @@
             return json_decode($data,true);
         }
 
+        public function getRecord(string $id):array{
+            $data = file_get_contents($this->absolutePath . "/" . "data/courses.json");
+            $records = json_decode($data,true);
+
+            foreach($records as $record){
+                if ($record["course_id"] == $id) {
+                    return $record;
+                }
+            }
+            return array();
+        }
+
         public function getAllWithInstructors():array{
             $records = $this->getAll();
             $courseInstructor = $this->getCourseInstructor();
@@ -33,18 +45,6 @@
                 }
             }
             return $records;
-        }
-
-        public function getRecord(string $id):array{
-            $data = file_get_contents($this->absolutePath . "/" . "data/courses.json");
-            $records = json_decode($data,true);
-
-            foreach($records as $record){
-                if ($record["course_id"] == $id) {
-                    return $record;
-                }
-            }
-            return array();
         }
 
         public function getCourseInstructor():array{

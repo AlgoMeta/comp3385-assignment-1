@@ -32,15 +32,15 @@
 
         public function testAccessible(){
             SessionManager::add("user","John Doe");
-            $this->assertEquals(SessionManager::accessible("John Doe","login.php"), false);
-            $this->assertEquals(SessionManager::accessible("John Doe","signup.php"), false);
-            $this->assertEquals(SessionManager::accessible("John Doe","courses.php"), true);
-            $this->assertEquals(SessionManager::accessible("John Doe","profile.php"), true);
+            $this->assertEquals(SessionManager::accessible("John Doe","login"), false);
+            $this->assertEquals(SessionManager::accessible("John Doe","signup"), false);
+            $this->assertEquals(SessionManager::accessible("John Doe","courses"), true);
+            $this->assertEquals(SessionManager::accessible("John Doe","profile"), true);
             SessionManager::remove("user");
-            $this->assertEquals(SessionManager::accessible(null,"login.php"), true);
-            $this->assertEquals(SessionManager::accessible(null,"signup.php"), true);
-            $this->assertEquals(SessionManager::accessible(null,"courses.php"), false);
-            $this->assertEquals(SessionManager::accessible(null,"profile.php"), false);
+            $this->assertEquals(SessionManager::accessible(null,"login"), true);
+            $this->assertEquals(SessionManager::accessible(null,"signup"), true);
+            $this->assertEquals(SessionManager::accessible(null,"courses"), false);
+            $this->assertEquals(SessionManager::accessible(null,"profile"), false);
         }
     }
 ?>
